@@ -1,0 +1,14 @@
+{
+  "name": "luma-finanzas",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": ["frontend", "backend"],
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB -c green,cyan \"npm run start:dev -w @luma/backend\" \"npm run dev -w @luma/frontend\"",
+    "dev:api": "npm run start:dev -w @luma/backend",
+    "dev:web": "npm run dev -w @luma/frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

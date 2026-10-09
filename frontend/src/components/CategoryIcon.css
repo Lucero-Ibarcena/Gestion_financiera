@@ -1,0 +1,23 @@
+.category-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  flex: 0 0 auto;
+  border-radius: 14px;
+  color: #52766a;
+  background: #edf4ee;
+}
+.category-icon.income {
+  color: #427765;
+  background: #e9f3ec;
+}
+.category-icon.expense {
+  color: #b26d53;
+  background: #fbefe9;
+}
+.category-icon.compact {
+  width: 32px;
+  height: 32px;
+  border-radius: 11px;
+}
